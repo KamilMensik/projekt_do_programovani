@@ -9,7 +9,7 @@ def file_load():
             print('Soubor nebyl nalezen.')
 
 
-def file_lines_to_list(file):
+def file_lines_to_list(file) -> list:
     print(file.read().splitlines())
 
 file_lines_to_list(file_load())
