@@ -5,7 +5,7 @@ def file_load():
         try:
             soubor = open(file_path, encoding='utf-8')
             return soubor
-        except:
+        except FileNotFoundError:
             print('Soubor nebyl nalezen.')
 
 

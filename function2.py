@@ -5,8 +5,8 @@ def check_list(key: str, value: str, hash: list) -> bool:
                 return True
             else:
                 return False
-        except:
-            print('Klic nebyl nalezen')    
+        except KeyError:
+            print('Klic nebyl nalezen')
             return False
 
 hash = { 'klic': 'hodnota' }
